@@ -44,7 +44,7 @@ const RestaurantCard = (props) => {
             <h3>{resName}</h3>
             <h4>{cuisine}</h4>
             <h4>{rating}</h4>
-            <h4>{props.deltime}</h4>
+            <h4>{deltime}</h4>
         </div>
     );
 };
@@ -55,7 +55,7 @@ const Body = () => {
             <div className="search">Search</div>
             <div className="res-container">
                 <RestaurantCard resName="Meghana Foods" cuisine="Biryani, North Indian, Asian" rating="4.5" deltime="36 mins"/>
-                <RestaurantCard resName="KFC" cuisine="Biryani, North Indian, Asian" rating="4.5" deltime="36 mins"/>
+                <RestaurantCard resName="KFC" cuisine="burger" rating="2.5" deltime="24 mins"/>
             </div>
 
         </div>
