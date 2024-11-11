@@ -6,3 +6,5 @@ export const LOGO_URL = "https://png.pngtree.com/template/20191014/ourmid/pngtre
 
 // default export doesn't work - only one element is possible to be exported
 // named export here - can export multiple elements
+
+export const MENU_API = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9352403&lng=77.624532&restaurantId=";
