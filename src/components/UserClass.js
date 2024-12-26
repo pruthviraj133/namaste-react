@@ -3,7 +3,7 @@ import React from "react";
 class UserClass extends React.Component {
     constructor(props){
         super(props);
-        console.log(this.props.name + "child constructor");
+        // console.log(this.props.name + "child constructor");
 
         this.state = {
             userInfo: {
@@ -14,27 +14,27 @@ class UserClass extends React.Component {
     }
     
     async componentDidMount(){
-        console.log(this.props.name + "child component did mount");
+        // console.log(this.props.name + "child component did mount");
         const data = await fetch("https://api.github.com/users/xlreon");
         const json = await data.json();
         
         this.setState({
             userInfo:json,
         });
-        console.log(json);
-        console.log(json.login);
+        // console.log(json);
+        // console.log(json.login);
     }
 
     componentDidUpdate(){
-        console.log("Component did update");
+        // console.log("Component did update");
     }
 
     componentWillUnmount(){
-        console.log("component will unmount");
+        // console.log("component will unmount");
     }
 
     render () {
-        console.log(this.props.name + "child render");
+        // console.log(this.props.name + "child render");
         const {name, location, login, avatar_url} = this.state.userInfo;
         return (
             <div className="user-card">
